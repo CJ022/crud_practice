@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta htp-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Admin-Portal</title>
+    <link rel="stylesheet" href="style.css">
+
+	
+</head>
+<body>
+    <div class="main">
+      <form action="/removestudent">
+   <h3>DELETE ATHELETE</h3>
+   
+    <hr>
+ 
+    <label for="phn"><b>Phone no</b></label>
+    <input type="phone" placeholder="type phone no to be searched" name="phone" id="phone" required>
+
+    <button type="submit" class="registerbtn">DELETE</button>
+    <a href="./" style="color:black">BACK TO HOME PAGE</a>
+
+    <br>
+    {{#if mesg1}}
+    <h3>Data deleted!</h3>
+    {{/if}}
+
+     {{#if mesg2}}
+    <h3>Data Not found!</h3>
+    {{/if}}
+    </form>
+  </div>
+</body>
+</html>
+  

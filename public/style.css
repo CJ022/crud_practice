@@ -1,0 +1,152 @@
+body {
+    margin: 0%;
+    position: relative;
+    width: 100%;
+}
+.outer{
+    color: black;
+    text-align: center;
+    margin: 50px;
+}
+.main {
+    /* border: solid black 1px; */
+    width: 100%;
+    /* margin: 100px 0px 0px 0px ; */
+    display: grid;
+  grid: auto auto auto auto;
+  grid-gap: 10px;
+    
+    padding: 10px;
+}
+.op {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+label{
+    color: #000;
+    text-align: left;
+}
+
+input[type=text],
+input[type=phone],
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=phone]:focus,
+input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit button */
+
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    margin: 8px 0;
+    padding: 6px 8px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+
+/* Add a blue text color to links */
+
+a {
+    color: dodgerblue;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.gender_g {
+    display: flex;
+    color: #000;
+}
+
+form{
+    display: inline-block;
+    width: 100%;
+}
+
+#header-nav {
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  .navbar-brand {
+    padding-top: 25px;
+  }
+  .navbar-brand h1 { 
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+  .navbar-brand p { 
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  .navbar-brand p span { 
+    vertical-align: middle;
+  }
+  
+  #nav-list {
+    margin-top: 10px;
+  }
+  #nav-list a {
+    color: #951C49;
+    text-align: center;
+  }
+  #nav-list a:hover {
+    background: #E7E7E7;
+  }
+  #nav-list a span {
+    font-size: 1.8em;
+  }
+  
+  #phone {
+    margin-top: 5px;
+  }
+  #phone a { /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+  }
+  #phone div {
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+  }
+

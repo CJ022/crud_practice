@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Databse</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="./"><h1>Admin Database</h1></a>                    
+                    </div>
+                </div>
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li id="navHomeButton" class="visible-xs active">
+                            <a href="./">
+                                </span>HOME
+                            </a>
+                        </li>
+                        <li id="navMenuButton">
+                            <a href="./">
+                                <br class="hidden-xs">SPORT GROUPS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <br class="hidden-xs">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <br class="hidden-xs">PRIZES AND REWARDS</a>
+                            
+                        </li>
+                        <li id="phone" class="hidden-xs">
+                            <div>REGISTER AT</div>
+                            <a class="btn" href="tel:000-000-0000">
+                            000-000-0000</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+      <form action="/updatesearch">
+   <h3>UPDATE ATHELETE DETAILS</h3>
+ 
+    <input type="phone" style="width:200px;" placeholder="Enter Phone No. to Update" name="phone" id="phone" required>
+
+<div class="s_btn">
+    <button type="submit" class="registerbtn">SEACRH ATHELETE</button>
+    <a href="./" style="color:black">BACK TO HOME PAGE</a>
+</div>
+    
+    <br>
+   
+ {{#if umesg}}
+     <h3>Data updated!</h3>
+     {{/if}}
+
+     
+     {{#if mesg2}}
+     <h3>Data Not Found!</h3>
+     {{/if}}
+    </form>
+  </div>
+
+<!--Search form design end-->
+
+{{#if mesg1}}
+       <div class="container">
+       <form action="/updatestudent"  >
+   <h3>UPDATE STUDENT</h3>
+   
+    <hr>
+{{#data}}
+    <label for="name"><b>Athlete name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" value="{{name}}" id="name" required>
+
+    <label for="phn"><b>Phone no</b></label>
+    <input type="phone" placeholder="Enter Phone Number" name="phone" value="{{phone}}" id="phone" required readonly>
+
+    <label for="eml-id"><b>Email Id</b></label>
+    <input type="email" placeholder="Enter Email Id" name="email" value="{{email}}" id="email" required >
+
+    <label for="sport"><b>Sport</b></label>
+    <input type="sport" placeholder="Enter Your Sport Group" name="sport" value="{{sport}}" id="sport" required > 
+   
+  <div class="gender_g">
+     <strong>Gender</strong>
+     <input type="radio" name="gender" id="" value="Male"> Male
+     <input type="radio" name="gender" id=""  value="Female">  Female
+  </div>
+    <button type="submit" class="registerbtn">UPDATE Information</button>
+{{/data}}
+  
+    <a href="./" style="color:black">BACK TO HOME PAGE</a> <br>
+     
+    
+</form>
+</div>
+     
+      {{/if}}      
+</body>
+</html>

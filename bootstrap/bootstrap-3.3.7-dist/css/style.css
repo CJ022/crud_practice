@@ -1,0 +1,18 @@
+body{
+    font-size: 16px;
+    color: #fff;
+    background-color: maroon;
+}
+
+#header-nav{
+    background-color: yellow;
+    border-radius: 0;
+    border: 0;
+}
+
+#logoimg{
+    background: url('pj1/img.jpg') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin:10px 15px 10px 0;
+}
